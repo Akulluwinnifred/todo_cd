@@ -40,6 +40,8 @@ jobs:
         pip install django psycopg2-binary
     - name: Run migrations and tests
       run: |
+        ls
         cd todo_project
+        ls
         python manage.py migrate
         python manage.py test
