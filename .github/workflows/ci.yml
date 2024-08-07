@@ -40,5 +40,4 @@ jobs:
         pip install django psycopg2-binary
     - name: Run tests
       run: |
-        python manage.py migrate
         python manage.py test
