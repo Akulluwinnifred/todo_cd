@@ -38,19 +38,11 @@ jobs:
       run: |
         python -m pip install --upgrade pip
         pip install django psycopg2-binary
-    - name: Debug directory structure
+    - name: List directory contents
       run: |
-        echo "Home directory contents:"
-        ls -la ~
-        echo "Workspace directory contents:"
-        ls -la $GITHUB_WORKSPACE
-        echo "todoproject directory contents:"
-        ls -la $GITHUB_WORKSPACE/todoproject
+        ls -R
     - name: Run migrations and tests
       run: |
         cd todoproject
         python manage.py migrate
         python manage.py test
-        
-
-
