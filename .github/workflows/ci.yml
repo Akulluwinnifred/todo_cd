@@ -41,7 +41,7 @@ jobs:
     - name: Run migrations and tests
       run: |
         ls
-        cd todo_project
+        cd todoproject
         ls
         python manage.py migrate
         python manage.py test
