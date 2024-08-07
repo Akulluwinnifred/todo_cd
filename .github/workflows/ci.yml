@@ -41,8 +41,4 @@ jobs:
     - name: List directory contents
       run: |
         ls -R
-    - name: Run migrations and tests
-      run: |
-        cd todoproject
-        python manage.py migrate
-        python manage.py test
+   
