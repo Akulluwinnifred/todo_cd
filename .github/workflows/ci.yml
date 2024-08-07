@@ -51,3 +51,6 @@ jobs:
         cd todoproject
         python manage.py migrate
         python manage.py test
+        
+
+
